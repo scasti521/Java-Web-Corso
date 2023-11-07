@@ -1,14 +1,20 @@
 package Esercizio_per_GIocattolaio;
 
+import java.util.Scanner;
+
 public class Cliente {
     int id;
     private String nome;
     private String email;
+    private String username;
+    private String password;
 
-    public Cliente(int id, String nome, String email){
-        this.id=id;
-        this.nome=nome;
-        this.email=email;
+    public Cliente(){
+        id=1;
+        nome="Sergio";
+        email="scastiglione521@gmail.com";
+        username="scasti521";
+        password="Sergio1234";
     }
 
     public String getEmail() {
@@ -30,5 +36,14 @@ public class Cliente {
     @Override
     public String toString() {
         return "Nome cliente: "+getNome()+" "+"Email: "+getEmail();
+    }
+
+    public Cliente(int id, String nome, String email, String username, String password){
+        this.id=id;        
+        this.nome=nome;
+        this.email=email;
+        this.username=username;
+        this.password=password;
+
     }
 }

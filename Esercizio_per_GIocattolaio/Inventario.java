@@ -3,7 +3,7 @@ package Esercizio_per_GIocattolaio;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Inventario {
+public class Inventario { 
     Scanner sc= new Scanner(System.in);
     ArrayList<Giocattolo> giochi= new ArrayList<>();
 
@@ -48,4 +48,16 @@ public class Inventario {
 
         }
     }
+
+    public void acquista_giocattolo(int acquisto){
+
+        for (int i = 0; i < giochi.size(); i++) {
+            Giocattolo giocattolo = giochi.get(i);
+            if (giocattolo.id == acquisto) {
+                giochi.remove(i);
+                break; //Eseguo un break in modo che dopo che abbiamo trovato il gioco con l'id da rimuovere non continui il ciclo
+            }
+        }
+    }
+
 }

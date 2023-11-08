@@ -9,8 +9,10 @@ public class Vendita {
         this.cliente=cliente;
     }
 
+
     @Override
     public String toString() {
         return giocattolo.toString()+" "+cliente.toString();
     }
+    
 }

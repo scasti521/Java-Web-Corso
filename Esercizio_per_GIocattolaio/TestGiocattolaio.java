@@ -112,9 +112,9 @@ public class TestGiocattolaio {
                 }else{
                     System.out.println("Grazie per aver visitato il nostro negozio, arrivederci!");
                 }
-
+                s.close();
             }
         }
-
+        sc.close();
     }
 }

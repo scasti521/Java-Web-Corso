@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
  
 public class TestGiocattolaio {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
 
         //branch main
@@ -114,9 +114,14 @@ public class TestGiocattolaio {
                 }else{
                     System.out.println("Grazie per aver visitato il nostro negozio, arrivederci!");
                 }
-
+                s.close();
             }
         }
+        sc.close();
+    }*/
 
+    public static void main(String[] args) {
+        DBManager dbm = new DBManager();
+        dbm.openConnection();
     }
 }
